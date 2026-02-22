@@ -2,7 +2,7 @@ import pandas as pd
 import os
 
 TARGET_UNITID = 193900
-DATA_DIR = os.path.join(os.path.dirname(__file__), '..', 'data_raw')
+DATA_DIR = os.path.join(os.path.dirname(__file__), '..', 'data_raw/2024/')
 
 FILES = {
     "Directory": "hd2024.csv",
