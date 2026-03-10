@@ -32,7 +32,7 @@ if __name__ == "__main__":
         print("Usage: python qc.py <filename> <varname>")
         sys.exit(1)
         
-    file_name = "data_raw/" + sys.argv[1]
+    file_name = sys.argv[1]
     variable_name = sys.argv[2]
     university_id = 193900
     

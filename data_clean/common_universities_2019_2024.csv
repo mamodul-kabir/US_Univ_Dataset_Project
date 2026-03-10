@@ -4,7 +4,6 @@ UNITID,INSTNM
 100690,Amridge University
 100706,University of Alabama in Huntsville
 100724,Alabama State University
-100733,University of Alabama System Office
 100751,The University of Alabama
 100812,Athens State University
 100830,Auburn University at Montgomery
@@ -37,7 +36,6 @@ UNITID,INSTNM
 102632,University of Alaska Southeast
 102669,Alaska Pacific University
 102845,Charter College
-103529,University of Alaska System of Higher Education
 104090,Brookline College-Phoenix
 104151,Arizona State University Campus Immersion
 104179,University of Arizona
@@ -47,7 +45,6 @@ UNITID,INSTNM
 104665,The School of Architecture
 104708,Glendale Community College
 104717,Grand Canyon University
-105136,Maricopa Community College System Office
 105145,GateWay Community College
 105154,Mesa Community College
 105297,Dine College
@@ -82,7 +79,6 @@ UNITID,INSTNM
 107600,Philander Smith University
 107877,Williams Baptist University
 107983,Southern Arkansas University Main Campus
-108056,University of Arkansas System Office
 108092,University of Arkansas-Fort Smith
 108232,Academy of Art University
 108269,Academy of Chinese Culture and Health Sciences
@@ -105,7 +101,6 @@ UNITID,INSTNM
 110468,Alliant International University-San Diego
 110486,California State University-Bakersfield
 110495,California State University-Stanislaus
-110501,California State University-Chancellors Office
 110510,California State University-San Bernardino
 110529,California State Polytechnic University-Pomona
 110538,California State University-Chico
@@ -156,7 +151,6 @@ UNITID,INSTNM
 114734,Franciscan School of Theology
 114789,Fresno City College
 114813,Fresno Pacific University
-114831,Foothill-De Anza Community College District
 114840,Fuller Theological Seminary
 115010,Glendale Career College
 115083,Golden Gate University
@@ -176,7 +170,6 @@ UNITID,INSTNM
 117627,La Sierra University
 117636,Loma Linda University
 117672,Southern California University of Health Sciences
-117681,Los Angeles Community College District Office
 117733,Los Angeles Valley College
 117751,The Master's University and Seminary
 117867,Los Angeles Mission College
@@ -192,7 +185,6 @@ UNITID,INSTNM
 119605,National University
 119678,Naval Postgraduate School
 119775,Newschool of Architecture and Design
-120023,North Orange County Community College District
 120166,San Francisco Bay University
 120184,Notre Dame de Namur University
 120254,Occidental College
@@ -214,7 +206,6 @@ UNITID,INSTNM
 121886,Rio Hondo College
 122117,Dongguk University Los Angeles
 122296,Samuel Merritt University
-122320,San Diego Community College District-District Office
 122375,San Diego Mesa College
 122409,San Diego State University
 122436,University of San Diego
@@ -225,7 +216,6 @@ UNITID,INSTNM
 122685,San Joaquin Valley College-Visalia
 122728,William Jessup University
 122755,San Jose State University
-122782,San Mateo County Community College District Office
 122931,Santa Clara University
 122977,Santa Monica College
 123095,Saybrook University
@@ -241,7 +231,6 @@ UNITID,INSTNM
 123633,South Baylo University
 123651,Vanguard University of Southern California
 123916,Starr King School for the Ministry
-123925,State Center Community College District
 123943,Marshall B Ketchum University
 123952,Southern California Institute of Architecture
 123961,University of Southern California
@@ -250,7 +239,6 @@ UNITID,INSTNM
 124283,Claremont School of Theology
 124292,Thomas Aquinas College
 124487,Epic Bible College & Graduate School
-124557,University of California-System Administration Central Office
 125037,The Colleges of Law at Ventura
 125231,Walden University
 125471,West Los Angeles College
@@ -262,7 +250,6 @@ UNITID,INSTNM
 126012,The Wright Institute
 126049,Thomas Jefferson School of Law
 126076,Yeshiva Ohr Elchonon Chabad West Coast Talmudical Seminary
-126100,Yosemite Community College District Office
 126182,Adams State University
 126207,Aims Community College
 126289,Arapahoe Community College
@@ -297,7 +284,6 @@ UNITID,INSTNM
 127954,Montessori Education Center of the Rockies
 128106,Colorado State University Pueblo
 128258,Trinidad State College
-128300,University of Colorado System Office
 128328,United States Air Force Academy
 128391,Western Colorado University
 128498,Albertus Magnus College
@@ -327,7 +313,6 @@ UNITID,INSTNM
 130697,Wesleyan University
 130776,Western Connecticut State University
 130794,Yale University
-130882,Delaware Technical Community College-Central Office
 130907,Delaware Technical Community College-Terry
 130934,Delaware State University
 130943,University of Delaware
@@ -479,7 +464,6 @@ UNITID,INSTNM
 141574,University of Hawaii at Manoa
 141644,Hawaii Pacific University
 141839,University of Hawaii Maui College
-141963,University of Hawaii System Office
 141981,University of Hawaii-West Oahu
 142090,Boise Bible College
 142115,Boise State University
@@ -509,7 +493,6 @@ UNITID,INSTNM
 144281,Columbia College Chicago
 144351,Concordia University-Chicago
 144740,DePaul University
-144777,DeVry University-Administrative Office
 144883,East-West University
 144892,Eastern Illinois University
 144962,Elmhurst University
@@ -571,11 +554,9 @@ UNITID,INSTNM
 149028,Saint Anthony College of Nursing
 149222,Southern Illinois University-Carbondale
 149231,Southern Illinois University Edwardsville
-149240,Southern Illinois University-System Office
 149329,Telshe Yeshiva-Chicago
 149505,Trinity Christian College
 149514,Trinity International University-Illinois
-149587,University of Illinois System Offices
 149639,VanderCook College of Music
 149772,Western Illinois University
 149781,Wheaton College
@@ -748,7 +729,6 @@ UNITID,INSTNM
 160065,University of Holy Cross
 160074,Franciscan Missionaries of Our Lady University
 160409,Saint Joseph Seminary College
-160533,Southern University-Board and System
 160612,Southeastern Louisiana University
 160621,Southern University and A & M College
 160630,Southern University at New Orleans
@@ -765,7 +745,6 @@ UNITID,INSTNM
 161226,University of Maine at Farmington
 161235,University of Maine at Fort Kent
 161253,University of Maine
-161280,University of Maine-System Central Office
 161299,Maine Maritime Academy
 161341,University of Maine at Presque Isle
 161457,University of New England
@@ -799,7 +778,6 @@ UNITID,INSTNM
 163976,St. John's College
 164076,Towson University
 164085,Maryland University of Integrative Health
-164146,University System of Maryland
 164155,United States Naval Academy
 164173,Stevenson University
 164216,Washington College
@@ -848,7 +826,6 @@ UNITID,INSTNM
 166629,University of Massachusetts-Amherst
 166638,University of Massachusetts-Boston
 166656,MCPHS University
-166665,University of Massachusetts-Central Office
 166674,Massachusetts College of Art and Design
 166683,Massachusetts Institute of Technology
 166692,Massachusetts Maritime Academy
@@ -989,7 +966,6 @@ UNITID,INSTNM
 175616,Delta State University
 175856,Jackson State University
 175980,Millsaps College
-175999,Board of Trustees-Mississippi State Institutions of Higher Learning
 176017,University of Mississippi
 176035,Mississippi University for Women
 176044,Mississippi Valley State University
@@ -1040,7 +1016,6 @@ UNITID,INSTNM
 178402,University of Missouri-Kansas City
 178411,Missouri University of Science and Technology
 178420,University of Missouri-St Louis
-178439,University of Missouri-System Office
 178518,Nazarene Theological Seminary
 178615,Truman State University
 178624,Northwest Missouri State University
@@ -1098,7 +1073,6 @@ UNITID,INSTNM
 181543,Summit Christian College
 181604,College of Saint Mary
 181738,Union Adventist University
-181747,University of Nebraska-Central Administration System Office
 181783,Wayne State College
 181853,York University
 182005,College of Southern Nevada
@@ -1107,7 +1081,6 @@ UNITID,INSTNM
 182290,University of Nevada-Reno
 182306,Great Basin College
 182500,Truckee Meadows Community College
-182519,Nevada System of Higher Education-System Office
 182564,Western Nevada College
 182634,Colby-Sawyer College
 182670,Dartmouth College
@@ -1124,7 +1097,6 @@ UNITID,INSTNM
 183239,Saint Anselm College
 183257,University of New Hampshire College of Professional Studies Online
 183275,Thomas More College of Liberal Arts
-183327,University System of New Hampshire System Office
 183488,Eastwick College-Hackensack
 183789,Berkeley College-Woodland Park
 183804,Beth Medrash Govoha
@@ -1194,7 +1166,6 @@ UNITID,INSTNM
 189592,Bryant & Stratton College-Greece
 189705,Canisius University
 189857,Central Yeshiva Tomchei Tmimim Lubavitz
-190035,CUNY System Office
 190044,Clarkson University
 190080,Colgate Rochester Crozer Divinity School
 190099,Colgate University
@@ -1301,7 +1272,6 @@ UNITID,INSTNM
 195580,Saint Vladimirs Orthodox Theological Seminary
 195720,St. John Fisher University
 195809,St. John's University-New York
-195827,SUNY-System Office
 196006,SUNY College of Technology at Alfred
 196015,SUNY College of Technology at Canton
 196024,SUNY College of Technology at Delhi
@@ -1395,7 +1365,6 @@ UNITID,INSTNM
 199139,University of North Carolina at Charlotte
 199148,University of North Carolina at Greensboro
 199157,North Carolina Central University
-199175,University of North Carolina System
 199184,University of North Carolina School of the Arts
 199193,North Carolina State University at Raleigh
 199209,North Carolina Wesleyan University
@@ -1676,7 +1645,6 @@ UNITID,INSTNM
 214272,Neumann University
 214564,Salus University
 214582,Pennsylvania Institute of Technology
-214661,Pennsylvania State System of Higher Education-Central Office
 214883,Peirce College
 214971,Pennsylvania Academy of the Fine Arts
 215053,Pennsylvania College of Art and Design
@@ -1833,7 +1801,6 @@ UNITID,INSTNM
 221971,Union University
 221999,Vanderbilt University
 222178,Abilene Christian University
-222497,Alamo Community College District Central Office
 222567,Alvin Community College
 222628,Amberton University
 222831,Angelo State University
@@ -1919,7 +1886,6 @@ UNITID,INSTNM
 228653,The University of Texas Medical Branch at Galveston
 228705,Texas A&M University-Kingsville
 228723,Texas A&M University-College Station
-228732,Texas A & M University-System Office
 228769,The University of Texas at Arlington
 228778,The University of Texas at Austin
 228787,The University of Texas at Dallas
@@ -1933,7 +1899,6 @@ UNITID,INSTNM
 229018,The University of Texas Permian Basin
 229027,The University of Texas at San Antonio
 229063,Texas Southern University
-229090,The University of Texas System Office
 229115,Texas Tech University
 229160,Texas Wesleyan University
 229179,Texas Woman's University
@@ -1941,7 +1906,6 @@ UNITID,INSTNM
 229300,The University of Texas Health Science Center at Houston
 229337,Texas Tech University Health Sciences Center
 229355,Tyler Junior College
-229407,University of Houston-System Administration
 229780,Wayland Baptist University
 229799,Weatherford College
 229814,West Texas A & M University
@@ -1967,7 +1931,6 @@ UNITID,INSTNM
 231068,SIT Graduate Institute
 231095,Sterling College
 231147,Vermont Law and Graduate School
-231156,Vermont State Colleges-Office of the Chancellor
 231165,Vermont State University
 231174,University of Vermont
 231420,Averett University
@@ -2128,7 +2091,6 @@ UNITID,INSTNM
 240392,Herzing University-Madison
 240417,University of Wisconsin-Stout
 240426,University of Wisconsin-Superior
-240435,University of Wisconsin-System Administration
 240444,University of Wisconsin-Madison
 240453,University of Wisconsin-Milwaukee
 240462,University of Wisconsin-Platteville
@@ -2161,7 +2123,6 @@ UNITID,INSTNM
 241793,Center for Advanced Studies On Puerto Rico and the Caribbean
 241836,EDP University of Puerto Rico Inc-San Sebastian
 241951,Escuela de Artes Plasticas y Diseno de Puerto Rico
-242060,Sistema Universitario Ana G. Mendez
 242112,Huertas College
 242121,Humacao Community College
 242617,Inter American University of Puerto Rico-San German
@@ -2170,7 +2131,6 @@ UNITID,INSTNM
 242644,Inter American University of Puerto Rico-Barranquitas
 242653,Inter American University of Puerto Rico-Metro
 242662,Inter American University of Puerto Rico-Ponce
-242671,Inter American University of Puerto Rico-Central Office
 242680,Inter American University of Puerto Rico-Fajardo
 242699,Inter American University of Puerto Rico-Guayama
 242705,Inter American University of Puerto Rico-Bayamon
@@ -2182,7 +2142,6 @@ UNITID,INSTNM
 243133,University of Puerto Rico-Bayamon
 243142,University of Puerto Rico-Carolina
 243151,University of Puerto Rico at Cayey
-243160,University of Puerto Rico-Central Administration
 243179,University of Puerto Rico-Humacao
 243188,University of Puerto Rico-Utuado
 243197,University of Puerto Rico-Mayaguez
@@ -2214,7 +2173,6 @@ UNITID,INSTNM
 246354,Palo Alto College
 246789,HJ International Graduate School for Peace and Public Leadership
 247065,Beckfield College-Florence
-247083,University of Louisiana-System Administration
 247162,Ecumenical Theological Seminary
 247649,Landmark College
 247773,Yeshiva Gedolah of Greater Detroit
@@ -2278,7 +2236,6 @@ UNITID,INSTNM
 401250,Yo San University of Traditional Chinese Medicine
 404222,Inter American University of Puerto Rico-School of Optometry
 404338,Schiller International University
-404480,University System of Maryland-Research Centers
 405058,Yeshivas Novominsk
 405854,Rabbinical College of Ohr Shimon Yisroel
 406024,Galen College of Nursing-Tampa Bay
@@ -2305,7 +2262,6 @@ UNITID,INSTNM
 420325,Yeshiva D'monsey Rabbinical College
 420398,Northwest Vista College
 420705,Bakke Graduate University
-420802,Arizona Board of Regents
 421708,Arizona College of Nursing-Tempe
 421878,Eastern International College-Jersey City
 422695,Pacific College
@@ -2314,7 +2270,6 @@ UNITID,INSTNM
 426314,Embry-Riddle Aeronautical University-Worldwide
 428170,Southeastern College-West Palm Beach
 428259,Ottawa University-Milwaukee
-428453,Minnesota State Colleges and Universities System Office
 429085,American College of Acupuncture and Oriental Med
 429094,AOMA Graduate School of Integrative Medicine
 430184,Strayer University-Maryland
@@ -2343,9 +2298,7 @@ UNITID,INSTNM
 437097,University of Management and Technology
 438179,Brookline College-Tucson
 438586,American InterContinental University-Atlanta
-438665,Rancho Santiago Community College District Office
 439020,Midwest College of Oriental Medicine-Skokie
-439154,Texas Tech University System Administration
 439190,Cascadia College
 439367,CBD College
 439394,East West College of Natural Medicine
@@ -2359,7 +2312,6 @@ UNITID,INSTNM
 439969,Acupuncture and Massage College
 440004,Upper Valley Educators Institute
 440031,Keck Graduate Institute
-440138,Antioch University-System Administration
 440396,New Saint Andrews College
 440651,Atenas University
 440794,Pillar College
@@ -2395,7 +2347,6 @@ UNITID,INSTNM
 443599,American College of Healthcare Sciences
 443650,Miller-Motte College-Chattanooga
 443702,"Bexley Hall Seabury Western Theological Seminary Federation, Inc."
-443711,University of North Texas System
 443766,Strayer University-Tennessee
 443784,Strayer University-Pennsylvania
 444088,Brookline College-Albuquerque
@@ -2428,7 +2379,6 @@ UNITID,INSTNM
 446561,Stanbridge University
 446604,Uta Mesivta of Kiryas Joel
 446640,Harrisburg University of Science and Technology
-446978,Colorado State University-System Office
 447014,Daytona College
 447050,United States University
 447263,Joyce University of Nursing and Health Sciences
@@ -2439,8 +2389,6 @@ UNITID,INSTNM
 447801,University of East-West Medicine
 447953,SUM Bible College and Theological Seminary
 448239,Careers Unlimited
-448336,Arkansas State University System
-448381,San Joaquin Valley College-Central Administrative Office
 448691,International Institute for Restorative Practices
 449038,Strayer University-Florida
 449135,Dewey University-Juana DÃ­az
@@ -2474,7 +2422,6 @@ UNITID,INSTNM
 452948,Galen College of Nursing-Cincinnati
 453163,Strayer University-North Carolina
 453215,Strayer University-New Jersey
-454218,Chamberlain University-Administrative Office
 454227,Chamberlain University-Illinois
 454236,Chamberlain University-Ohio
 454245,Chamberlain University-Arizona
@@ -2625,7 +2572,6 @@ UNITID,INSTNM
 485111,Georgia Military College
 485272,West Coast University-Miami
 485403,High Tech High Graduate School of Education
-485467,Carrington College-Administrative Office
 485519,Lionel University
 485546,California Intercontinental University
 485698,American College of the Building Arts
@@ -2711,7 +2657,6 @@ UNITID,INSTNM
 491914,Yeshiva Gedola Tiferes Yerachmiel
 492069,Champion Christian College
 492209,Reiss-Davis Graduate School
-492263,The University of Tennessee System Office
 492476,EDP University of Puerto Rico-Villalba
 492607,The Chicago School at Dallas
 492689,Texas Tech University Health Sciences Center-El Paso
