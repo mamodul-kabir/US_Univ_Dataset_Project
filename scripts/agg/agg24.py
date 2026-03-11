@@ -51,7 +51,11 @@ def build_aggregated_dataset():
         }, 
         {
             'path' : 'data_freq/2024/drvef2024.csv',
-            'columns' : ['UNITID', 'ENRTOT', 'EFUG', 'EFUGFT', 'EFUGPT']
+            'columns' : ['UNITID', 'ENRTOT', 'EFUG']
+        },
+        {
+            'path' : 'data_raw/2024/ef2024d.csv',
+            'columns' : ['UNITID', 'STUFACR']
         },
         {
             'path' : 'data_freq/2024/drvc2024.csv',
@@ -127,17 +131,6 @@ def build_aggregated_dataset():
         cols[idx1], cols[idx2] = cols[idx2], cols[idx1]
         df = df[cols]
         df = df.drop(columns=['SATVR50', 'SATMT50'])
-
-    required_cols = ['EFUGFT', 'EFUGPT', 'SFTEINST']
-    if all(col in df.columns for col in required_cols):
-        df['FTEUG_CALC'] = df['EFUGFT'] + (df['EFUGPT'] / 3.0)
-        
-        mask = (df['SFTEINST'] > 0)
-        df.loc[mask, 'STUFACR'] = (df.loc[mask, 'FTEUG_CALC'] / df.loc[mask, 'SFTEINST'])
-        
-        df['STUFACR'] = df['STUFACR'].round(0).fillna(0).astype(int)
-        
-        df = df.drop(columns=['FTEUG_CALC', 'EFUGFT', 'EFUGPT'])
     
     if 'DOCDEGRS' in df.columns and 'DOCDEGPP' in df.columns and 'DOCDEGOT' in df.columns:
         df['DOCDETOT'] = df['DOCDEGRS'] + df['DOCDEGPP'] + df['DOCDEGOT']
