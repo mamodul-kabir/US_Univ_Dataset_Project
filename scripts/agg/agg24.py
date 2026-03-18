@@ -24,8 +24,8 @@ def build_aggregated_dataset():
             'columns': ['UNITID', 'SATPCT', 'SATVR50', 'SATMT50', 'ACTPCT', 'ACTCM50']
         }, 
         {
-            'path' : 'data_freq/2024/drvcost2024.csv',
-            'columns' : ['UNITID', 'TUFEYR3']
+            'path' : 'data_raw/2024/cost1_2024.csv',
+            'columns' : ['UNITID', 'TUITION1']
         }, 
         {
             'path' : 'data_freq/2024/drvom2024.csv',
