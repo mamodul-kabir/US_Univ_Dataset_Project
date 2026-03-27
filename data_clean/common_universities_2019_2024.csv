@@ -8,7 +8,6 @@ UNITID,INSTNM
 100812,Athens State University
 100830,Auburn University at Montgomery
 100858,Auburn University
-100937,Birmingham-Southern College
 101116,South University-Montgomery
 101189,Faulkner University
 101365,Herzing University-Birmingham
@@ -296,7 +295,6 @@ UNITID,INSTNM
 129154,Goodwin University
 129215,Eastern Connecticut State University
 129242,Fairfield University
-129428,Rensselaer at Hartford
 129491,Hartford International University for Religion and Peace
 129525,University of Hartford
 129534,Holy Apostles College and Seminary
@@ -337,7 +335,6 @@ UNITID,INSTNM
 132709,Broward College
 132842,Albizu University-Miami
 132851,College of Central Florida
-132879,Johnson University Florida
 132903,University of Central Florida
 133021,Chipola College
 133386,Daytona State College
@@ -370,7 +367,6 @@ UNITID,INSTNM
 135188,Lake-Sumter State College
 135364,Luther Rice College & Seminary
 135391,State College of Florida-Manatee-Sarasota
-135610,Trinity International University-Florida
 135717,Miami Dade College
 135726,University of Miami
 136145,North Florida College
@@ -475,7 +471,6 @@ UNITID,INSTNM
 142522,Brigham Young University-Idaho
 142559,College of Southern Idaho
 142832,Adler University
-142887,American Academy of Art College
 142957,American Islamic College
 143048,School of the Art Institute of Chicago
 143084,Augustana College
@@ -517,7 +512,6 @@ UNITID,INSTNM
 146490,Lake Forest Graduate School of Management
 146533,Lakeview College of Nursing
 146612,Lewis University
-146667,Lincoln Christian University
 146719,Loyola University Chicago
 146728,Lutheran School of Theology at Chicago
 146755,Trinity College of Nursing & Health Sciences
@@ -1086,7 +1080,6 @@ UNITID,INSTNM
 182670,Dartmouth College
 182795,Franklin Pierce University
 182829,University of New Hampshire-Franklin Pierce School of Law
-182917,Magdalen College
 182980,New England College
 183026,Southern New Hampshire University
 183044,University of New Hampshire-Main Campus
@@ -1320,7 +1313,6 @@ UNITID,INSTNM
 197151,School of Visual Arts
 197197,Wagner College
 197221,Webb Institute
-197230,Wells College
 197285,The College of Westchester
 197601,Yeshiva Karlin Stolin
 197647,Yeshiva Derech Chaim
@@ -1475,7 +1467,6 @@ UNITID,INSTNM
 204255,Zane State College
 204264,Muskingum University
 204422,North Central State College
-204468,Notre Dame College
 204477,Northeast Ohio Medical University
 204486,University of Northwestern Ohio
 204501,Oberlin College
@@ -1559,7 +1550,6 @@ UNITID,INSTNM
 209065,Linfield University
 209241,Mount Angel Seminary
 209250,Mt Hood Community College
-209287,Multnomah University
 209296,National University of Natural Medicine
 209409,Bushnell University
 209490,Oregon Health & Science University
@@ -1585,12 +1575,10 @@ UNITID,INSTNM
 210739,DeSales University
 210775,Alvernia University
 210809,American College of Financial Services
-211024,Clarks Summit University
 211088,Arcadia University
 211130,Missio Theological Seminary
 211273,Bryn Mawr College
 211291,Bucknell University
-211352,Cabrini University
 211431,Carlow University
 211440,Carnegie Mellon University
 211468,Cedar Crest College
@@ -1649,14 +1637,12 @@ UNITID,INSTNM
 214971,Pennsylvania Academy of the Fine Arts
 215053,Pennsylvania College of Art and Design
 215062,University of Pennsylvania
-215105,University of the Arts
 215114,Cairn University-Langhorne
 215123,Philadelphia College of Osteopathic Medicine
 215266,University of Pittsburgh-Bradford
 215275,University of Pittsburgh-Greensburg
 215284,University of Pittsburgh-Johnstown
 215293,University of Pittsburgh-Pittsburgh Campus
-215415,Pittsburgh Technical College
 215424,Pittsburgh Theological Seminary
 215442,Point Park University
 215619,Reconstructionist Rabbinical College
@@ -1924,7 +1910,6 @@ UNITID,INSTNM
 230807,Westminster University
 230816,Bennington College
 230852,Champlain College
-230889,Goddard College
 230959,Middlebury College
 230995,Norwich University
 231059,Saint Michael's College
@@ -2105,7 +2090,6 @@ UNITID,INSTNM
 240745,Guam Community College
 240754,University of Guam
 240790,Northern Marianas College
-241100,American University of Puerto Rico
 241191,Universidad Adventista de las Antillas
 241216,Atlantic University
 241225,Universidad Central de Bayamon
@@ -2196,7 +2180,6 @@ UNITID,INSTNM
 366340,Stone Child College
 366368,New York Academy of Art
 366711,California State University-San Marcos
-367884,Hodges University
 367954,University of St. Augustine for Health Sciences
 368452,Nossi College of Art and Design
 369002,Massachusetts School of Law
@@ -2309,7 +2292,6 @@ UNITID,INSTNM
 439862,Pacific Islands University
 439871,PCI College
 439914,Seattle Institute of East Asian Medicine
-439969,Acupuncture and Massage College
 440004,Upper Valley Educators Institute
 440031,Keck Graduate Institute
 440396,New Saint Andrews College
@@ -2334,7 +2316,6 @@ UNITID,INSTNM
 442639,University of the Potomac-VA Campus
 442806,Edward Via College of Osteopathic Medicine
 442842,Pacific College of Health and Science
-442930,University of Antelope Valley
 443030,NorthShore University HealthSystem School of Nurse Anesthesia
 443049,Faith International University
 443058,Family of Faith Christian University
@@ -2564,7 +2545,6 @@ UNITID,INSTNM
 484473,University of Florida-Online
 484613,University of Phoenix-Arizona
 484631,University of Phoenix-California
-484710,University of Phoenix-Nevada
 484756,University of Phoenix-Texas
 484862,University of West Los Angeles
 484871,Rabbinical College Ohr Yisroel
@@ -2615,7 +2595,6 @@ UNITID,INSTNM
 488572,California Health Sciences University
 488679,Indiana Wesleyan University-National & Global
 488776,John Patrick University of Health and Applied Sciences
-488785,University of Saint Katherine
 488800,Teachers College of San Joaquin
 488846,University of the People
 488907,Wongu University of Oriental Medicine

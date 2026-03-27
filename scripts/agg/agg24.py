@@ -13,7 +13,12 @@ def build_aggregated_dataset():
     file_merges = [
         {
             'path': 'data_raw/2024/hd2024.csv',
-            'columns': ['UNITID', 'HLOFFER', 'CARNEGIERSCH']
+            'columns': ['UNITID', 'HLOFFER', 'CARNEGIERSCH', 'STABBR']
+        }
+        , 
+        {
+            'path' : 'data_raw/2024/ic2024.csv',
+            'columns' : ['UNITID', 'OPENADMP', 'FT_FTUG', 'CNTLAFFI']
         }, 
         {
             'path' : 'data_freq/2024/drvadm2024.csv',
@@ -37,7 +42,11 @@ def build_aggregated_dataset():
         },
         {
             'path' : 'data_freq/2024/drvgr2024.csv',
-            'columns' : ['UNITID', 'GRRTTOT', 'TRRTTOT', 'GBA6RTT', 'PGBA6RT', 'NRBA6RT']
+            'columns' : ['UNITID', 'GRRTTOT']
+        },
+        {
+            'path' : 'data_raw/2024/sfa2324.csv',
+            'columns' : ['UNITID', 'UAGRNTA', 'UDGAGRNTN']
         },
         {
             'path' : 'data_freq/2024/drvf2024.csv',

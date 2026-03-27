@@ -44,22 +44,25 @@ if common_unitids:
         instnm_col_24 = next(col for col in columns_2024 if 'INSTNM' in col.upper())
         iclevel_col_24 = next(col for col in columns_2024 if 'ICLEVEL' in col.upper())
         sector_col_24 = next(col for col in columns_2024 if 'SECTOR' in col.upper())
+        active_col_24 = next(col for col in columns_2024 if 'CYACTIVE' in col.upper())
         
-        df_2024 = pd.read_csv(hd2024_path, usecols=[unitid_col_24, instnm_col_24, iclevel_col_24, sector_col_24], encoding='cp1252', encoding_errors='replace')
+        df_2024 = pd.read_csv(hd2024_path, usecols=[unitid_col_24, instnm_col_24, iclevel_col_24, sector_col_24, active_col_24], encoding='cp1252', encoding_errors='replace')
         df_2024 = df_2024.rename(columns={
             unitid_col_24: 'UNITID', 
             instnm_col_24: 'INSTNM', 
             iclevel_col_24: 'ICLEVEL',
-            sector_col_24: 'SECTOR'
+            sector_col_24: 'SECTOR', 
+            active_col_24: 'CYACTIVE'
         })
         
         common_universities_df = df_2024[
             (df_2024['UNITID'].isin(common_unitids)) & 
             (df_2024['ICLEVEL'] == 1) & 
-            (df_2024['SECTOR'] != 0)
+            (df_2024['SECTOR'] != 0) & 
+            (df_2024['CYACTIVE'] == 1)
         ]
         
-        common_universities_df = common_universities_df.drop(columns=['ICLEVEL', 'SECTOR'])
+        common_universities_df = common_universities_df.drop(columns=['ICLEVEL', 'SECTOR', 'CYACTIVE'])
         
         os.makedirs("data_clean", exist_ok=True)
         

@@ -1,44 +1,107 @@
 import pandas as pd
 import os
 
-def track_unique_tuition_uids():
-    common_path = 'data_clean/common_universities_2019_2024.csv'
-    file1_path = 'data_raw/2024/cost1_2024.csv'
-    file2_path = 'data_freq/2024/drvcost2024.csv'
-
-    if not all(os.path.exists(p) for p in [common_path, file1_path, file2_path]):
-        print("One or more required files are missing.")
+def build_aggregated_dataset():
+    common_path = 'data_clean/common_universities_2019_2024.csv'    
+    
+    if not os.path.exists(common_path):
+        print(f"Base file not found: {common_path}")
         return
 
-    df_common = pd.read_csv(common_path, usecols=['UNITID'])
-    df_common['UNITID'] = pd.to_numeric(df_common['UNITID'], errors='coerce').fillna(0).astype(int)
-    valid_uids = set(df_common['UNITID'])
-
-    df_cost1 = pd.read_csv(file1_path, usecols=['UNITID', 'TUITION1'], encoding='cp1252', encoding_errors='replace')
-    df_cost1['UNITID'] = pd.to_numeric(df_cost1['UNITID'], errors='coerce').fillna(0).astype(int)
+    df = pd.read_csv(common_path)
+    df['UNITID'] = pd.to_numeric(df['UNITID'], errors='coerce').fillna(0).astype(int)
     
-    df_drvcost = pd.read_csv(file2_path, usecols=['UNITID', 'TUFEYR3'], encoding='cp1252', encoding_errors='replace')
-    df_drvcost['UNITID'] = pd.to_numeric(df_drvcost['UNITID'], errors='coerce').fillna(0).astype(int)
-
-    # Filter to common UIDs AND drop rows where the target metric is missing (NaN)
-    valid_cost1_uids = set(df_cost1[df_cost1['UNITID'].isin(valid_uids) & df_cost1['TUITION1'].notna()]['UNITID'])
-    valid_drvcost_uids = set(df_drvcost[df_drvcost['UNITID'].isin(valid_uids) & df_drvcost['TUFEYR3'].notna()]['UNITID'])
-
-    # Find the unique IDs using set differences
-    only_in_cost1 = valid_cost1_uids - valid_drvcost_uids
-    only_in_drvcost = valid_drvcost_uids - valid_cost1_uids
-
-    print(f"UIDs with data ONLY in {file1_path} (TUITION1): {len(only_in_cost1)}")
-    print(f"UIDs with data ONLY in {file2_path} (TUFEYR3): {len(only_in_drvcost)}")
-
-    # Save the results to CSV files for inspection
-    if len(only_in_cost1) > 0:
-        pd.DataFrame({'UNITID': list(only_in_cost1)}).to_csv('unique_to_cost1.csv', index=False)
-        print("-> Saved unique IDs to 'unique_to_cost1.csv'")
+    file_merges = [
+        {
+            'path': 'data_raw/2024/hd2024.csv',
+            'columns': ['UNITID', 'CYACTIVE']
+        },
+        {
+            'path': 'data_raw/2024/adm2024.csv',
+            'columns': ['UNITID', 'ADMCON7']
+        },
+        {
+            'path': 'data_raw/2024/ic2024.csv',
+            'columns': ['UNITID', 'OPENADMP']
+        }
+    ]
+    
+    for file_info in file_merges:
+        file_path = file_info['path']
+        target_cols = file_info['columns']
         
-    if len(only_in_drvcost) > 0:
-        pd.DataFrame({'UNITID': list(only_in_drvcost)}).to_csv('unique_to_drvcost.csv', index=False)
-        print("-> Saved unique IDs to 'unique_to_drvcost.csv'")
+        if not os.path.exists(file_path):
+            print(f"File not found: {file_path}")
+            continue
+
+        raw_columns = pd.read_csv(file_path, nrows=0, encoding='cp1252', encoding_errors='replace').columns
+        
+        actual_usecols = []
+        col_mapping = {}
+        
+        for target in target_cols:
+            if target == 'UNITID':
+                matched_col = next((col for col in raw_columns if 'UNITID' in col.upper()), None)
+            else:
+                matched_col = next((col for col in raw_columns if col.strip().upper() == target), None)
+                
+            if matched_col:
+                actual_usecols.append(matched_col)
+                col_mapping[matched_col] = target
+                
+        if actual_usecols:
+            temp_df = pd.read_csv(file_path, usecols=actual_usecols, encoding='cp1252', encoding_errors='replace')
+            temp_df = temp_df.rename(columns=col_mapping)
+            temp_df['UNITID'] = pd.to_numeric(temp_df['UNITID'], errors='coerce').fillna(0).astype(int)
+            
+            df = pd.merge(df, temp_df, on='UNITID', how='left')
+
+    # Summary: Institution Activity
+    if 'CYACTIVE' in df.columns:
+        active_count = (df['CYACTIVE'] == 1).sum()
+        inactive_count = df['CYACTIVE'].isin([2, 3]).sum()
+        print("\n" + "="*40)
+        print("INSTITUTION ACTIVITY SUMMARY (2024)")
+        print("="*40)
+        print(f"Active (1):          {active_count}")
+        print(f"Inactive (2/3):      {inactive_count}")
+        print(f"Total Records:       {len(df)}")
+
+    # Summary: SAT/ACT Test Policy (ADMCON7)
+    if 'ADMCON7' in df.columns:
+        test_required = (df['ADMCON7'] == 1).sum()
+        test_optional = (df['ADMCON7'] == 5).sum()
+        test_blind = (df['ADMCON7'] == 3).sum()
+        test_other = df['ADMCON7'].isin([2, 4]).sum()
+        test_missing = df['ADMCON7'].isna().sum()
+
+        print("\n" + "="*40)
+        print("ADMISSIONS TEST POLICY SUMMARY (2024)")
+        print("="*40)
+        print(f"Test Required (1):   {test_required}")
+        print(f"Test Optional (5):   {test_optional}")
+        print(f"Test Blind (3):      {test_blind}")
+        print(f"Other (2/4):         {test_other}")
+        print(f"No Data:    {test_missing}")
+        print("="*40 + "\n")
+    
+    if 'OPENADMP' in df.columns: 
+        open_adm = (df['OPENADMP'] == 1).sum()
+        not_open_adm = (df['OPENADMP'] == 2).sum()
+        other = ((df['OPENADMP'] != 1) & (df['OPENADMP'] != 2)).sum()
+
+        print("\n" + "="*40)
+        print("OPEN ADMISSION STATS (2024)")
+        print("="*40)
+        print(f"Open Admission:   {open_adm}")
+        print(f"Not open admission:   {not_open_adm}")
+        print(f"Others:   {other}")
+        print(f"Open Admission %:   {(open_adm/(open_adm + not_open_adm) * 100)} % ")
+        print(f"Not open admission %:   {(not_open_adm/(open_adm + not_open_adm)* 100)} % ")
+        print(f"Missing:   {(other/len(df)) * 100} %")
+        
+        print("="*40 + "\n")
+    return df
 
 if __name__ == '__main__':
-    track_unique_tuition_uids()
+    build_aggregated_dataset()

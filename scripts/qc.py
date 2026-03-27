@@ -34,7 +34,7 @@ if __name__ == "__main__":
         
     file_name = sys.argv[1]
     variable_name = sys.argv[2]
-    university_id = 493895
+    university_id = 421896    #117636
     
     output = get_university_value(file_name, variable_name, university_id)
     print(output)
